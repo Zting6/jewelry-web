@@ -1,39 +1,39 @@
 <template>
     <div class="outer">
         <div class="form">
-            <h1>我已有在线账户</h1>
-            <el-form ref="loginForm" :model="logForm" :rules="rules" label-width="0px" class="logForm" :size="formSize">
+            <h1>注册账号</h1>
+            <el-form ref="registerForm" :model="regForm" :rules="rules" label-width="0px" class="regForm" :size="formSize">
                 <el-form-item label="" prop="name">
-                    <el-input v-model="logForm.name" placeholder="用户名*" autocomplete="off" />
+                    <el-input v-model="regForm.name" placeholder="用户名*" autocomplete="off" />
                 </el-form-item>
                 <el-form-item label="" prop="passward">
-                    <el-input v-model="logForm.passward" type="password" placeholder="密码*" show-password
+                    <el-input v-model="regForm.passward" type="password" placeholder="密码*" show-password
                         autocomplete="off" />
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary" class="logButton" @click="submitForm(loginForm)">登录</el-button>
+                    <el-button type="primary" class="regButton" @click="submitForm(registerForm)">注册</el-button>
 
                 </el-form-item>
             </el-form>
-            <router-link to="/register"><span class="register">去注册</span></router-link>
+            <div class="login">我已有账户，去<router-link to="/login"><span class="tologin">登录</span></router-link></div>
         </div>
     </div>
 </template>
 <script setup lang="ts">
 import type { FormInstance, FormRules } from "element-plus";
 import { ref, reactive } from "vue"
-interface LogForm {
+interface regForm {
     name: string,
     passward: string
 }
 const formSize = ref('default')
-const logFormRef = ref<FormInstance>()
-const logForm = reactive<LogForm>({
+const regFormRef = ref<FormInstance>()
+const regForm = reactive<regForm>({
     name: '',
     passward: ''
 })
 
-const rules = reactive<FormRules<LogForm>>({
+const rules = reactive<FormRules<regForm>>({
     name: [
         { required: true, message: 'Please input user name', trigger: 'blur' },
         { min: 3, message: 'Length should be 3 to 5', trigger: 'blur' }
@@ -44,9 +44,9 @@ const rules = reactive<FormRules<LogForm>>({
     ]
 })
 
-const submitForm = (loginForm: FormInstance | undefined) => {
-    if (!loginForm) return
-    loginForm.validate((valid) => {
+const submitForm = (registerForm: FormInstance | undefined) => {
+    if (!registerForm) return
+    registerForm.validate((valid) => {
         if (valid) {
             console.log('submit!')
         } else {
@@ -70,10 +70,10 @@ const submitForm = (loginForm: FormInstance | undefined) => {
     height: 500px;
     background-color: white;
     margin: 170px 0;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     position: relative;
 
     h1 {
@@ -81,7 +81,7 @@ const submitForm = (loginForm: FormInstance | undefined) => {
     }
 }
 
-.logForm {
+.regForm {
     width: 400px;
     height: 600px;
     margin: 0 auto;
@@ -91,26 +91,30 @@ const submitForm = (loginForm: FormInstance | undefined) => {
     justify-content: center;
 }
 
-.logButton {
+.regButton {
     width: 400px;
     background-color: black;
     margin-top: 20px;
     transition: all .3s;
 }
 
-.logButton:hover {
+.regButton:hover {
     background-color: rgb(63, 63, 63);
 }
 
-.register {
+.login {
     width: 200px;
-    cursor: pointer;
+
     position: absolute;
-    bottom: 70px;
-    left: 648px;
+    top: 22px;
+    left: 60px;
 }
 
-.register:hover {
+.tologin {
+    cursor: pointer;
+}
+
+.tologin:hover {
     text-decoration: underline;
 }
 </style>

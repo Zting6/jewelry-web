@@ -15,7 +15,8 @@
 
         </div>
         <div class="about">
-            <span>自 1895 年以来，我们的创办人 Daniel Swarovski 把对创新研发和设计的热诚、匠心独运的仿水晶精湛技艺灌注到我们的品牌上，将施华洛世奇打造成业界有名的首饰和配饰品牌。</span>
+            <span><router-link to="/prolist">自 1895 年以来，我们的创办人 Daniel Swarovski
+                    把对创新研发和设计的热诚、匠心独运的仿水晶精湛技艺灌注到我们的品牌上，将施华洛世奇打造成业界有名的首饰和配饰品牌。</router-link></span>
         </div>
         <div class="products">
             <h1>新品推荐</h1>

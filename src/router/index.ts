@@ -20,7 +20,19 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../views/login/index.vue'),
-      meta: { header_unhome: true }
+      meta: { small_header: true }
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/register/index.vue'),
+      meta: { small_header: true }
+    },
+    {
+      path: '/prolist',
+      name: 'prolist',
+      component: () => import('../views/prolist/index.vue'),
+      meta: { header: true }
     }
   ]
 })
