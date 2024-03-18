@@ -1,5 +1,5 @@
 <template>
-    <div class="outer" :class="{ outer: isAtTop, outer_untop: !isAtTop }">
+    <div class="outer">
         <div class="top">
             <div class="location">
                 <el-icon>
@@ -142,116 +142,7 @@
         </ul>
 
     </div>
-    <div class="outersmall" :class="{ outersmall: isAtTop, outersmall_untop: !isAtTop }">
-        <div class="os_inner">
-            <div class="os_title">SECLUDED RESIGNED</div>
-            <div class="os_content">
-                <ul class="bottom">
-                    <li class="b_1">新品上市</li>
-                    <li class="b_2">
-                        配饰
-                        <ul class="inner b_i_2">
-                            <li>
-                                <span>项链</span>
-                                <ul class="content">
-                                    <li>项链</li>
-                                    <li>吊坠</li>
-                                    <li>束颈项链</li>
-                                    <li>套装</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>戒指</span>
-                                <ul class="content">
-                                    <li>光环戒指</li>
-                                    <li>图像戒指</li>
-                                    <li>简约造型戒指</li>
-                                    <li>个性戒指</li>
-                                    <li>可调节戒指</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>手链</span>
-                                <ul class="content">
-                                    <li>链式手镯</li>
-                                    <li>可调式手链</li>
-                                    <li>手链</li>
-                                    <li>手镯</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>按系列选购</span>
-                                <ul class="content">
-                                    <li>花卉系列</li>
-                                    <li>蝴蝶系列</li>
-                                    <li>星星系列</li>
-                                    <li>爱心系列</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>系列首饰</span>
-                                <img src="https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_5128,h_6837,x_6000,y_4858/dpr_2.0,f_auto,q_auto,c_lfill,w_285,h_365/swa-cms/2023_HOLIDAY_VISUAL_MODEL-6_OF_GL_72DPI_RGB/.jpg"
-                                    alt="">
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="b_3">装饰摆件
-                        <ul class="inner b_i_3">
-                            <li>
-                                <span>项链</span>
-                                <ul class="content">
-                                    <li>项链</li>
-                                    <li>吊坠</li>
-                                    <li>束颈项链</li>
-                                    <li>套装</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>戒指</span>
-                                <ul class="content">
-                                    <li>光环戒指</li>
-                                    <li>图像戒指</li>
-                                    <li>简约造型戒指</li>
-                                    <li>个性戒指</li>
-                                    <li>可调节戒指</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>手链</span>
-                                <ul class="content">
-                                    <li>链式手镯</li>
-                                    <li>可调式手链</li>
-                                    <li>手链</li>
-                                    <li>手镯</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>按系列选购</span>
-                                <ul class="content">
-                                    <li>花卉系列</li>
-                                    <li>蝴蝶系列</li>
-                                    <li>星星系列</li>
-                                    <li>爱心系列</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>系列首饰</span>
-                                <img src="https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_5128,h_6837,x_6000,y_4858/dpr_2.0,f_auto,q_auto,c_lfill,w_285,h_365/swa-cms/2023_HOLIDAY_VISUAL_MODEL-6_OF_GL_72DPI_RGB/.jpg"
-                                    alt="">
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="b_4">礼品</li>
-                    <li class="b_5">优惠专区</li>
-                    <li class="b_6">团购专区</li>
-                    <li class="b_7">搜索</li>
-                    <li class="b_8">购物车</li>
-                </ul>
-            </div>
 
-
-        </div>
-    </div>
 </template>
 <script setup lang="ts">
 import { ref, reactive, onMounted, onUnmounted } from "vue"
@@ -278,97 +169,24 @@ onUnmounted(() => {
     display: flex;
     flex-direction: column;
     transition: all .5s ease-in-out;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
-    position: fixed;
+    /* color: white; */
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); */
+    /* position: fixed; */
     z-index: 100;
+
+    color: black;
+    background-color: rgb(240, 238, 228);
+    cursor: pointer;
 
     /* box-shadow: 0 0 20px 20px transparent; */
 
 }
 
-.outer_untop {
-    display: none;
-
-}
-
-.outersmall {
-    display: none;
-}
-
-.outersmall_untop {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    transition: all .5s ease-in-out;
-    color: black;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 100;
-
-    .os_inner {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .os_title {
-        font-size: 22px;
-        width: 262px;
-        height: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .os_content {
-        /* margin-left: 230px; */
-        position: fixed;
-        left: 542px;
-    }
-
-    .bottom {
-        margin: 0 auto;
-        position: fixed;
-    }
-
-    .bottom>li {
-
-        margin-right: 60px;
-    }
-
-    /* 搜索 */
-    .bottom>li:nth-last-child(2) {
-        /* margin-left: 520px; */
-        position: fixed;
-        right: 100px;
-    }
-
-    /* 购物袋 */
-    .bottom>li:nth-last-child(1) {
-        /* margin-left: 10px; */
-        position: fixed;
-        right: 0px;
-    }
 
 
-    .b_i_2 {
-        padding-left: 200px;
-    }
 
-    .b_i_3 {
-        padding-left: 0;
-    }
-}
 
-.outer:hover {
-    color: black;
-    background-color: rgb(240, 238, 228);
-    cursor: pointer;
-}
 
 .top {
     width: 100%;

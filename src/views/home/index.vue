@@ -348,7 +348,7 @@
 </template>
 <script setup lang="ts">
 import { ref, reactive, onUnmounted, onMounted } from "vue"
-
+import "./js/smoothscroll.js";
 const isHome = ref(true)
 const actImgs = ref([
     "https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_3794,h_2135,x_3291,y_2288/dpr_1.0,f_auto,q_auto,c_lfill,w_1920,h_880/swa-cms/2023_HOLIDAY_KV_MESMERA_OF_GL_72DPI_RGB_EXT2/.jpg",

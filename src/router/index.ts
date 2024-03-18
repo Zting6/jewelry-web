@@ -33,6 +33,12 @@ const router = createRouter({
       name: 'prolist',
       component: () => import('../views/prolist/index.vue'),
       meta: { header: true }
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component: () => import('../views/detail/index.vue'),
+
     }
   ]
 })
