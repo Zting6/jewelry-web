@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Header from '@/components/header.vue'
-import HeaderUnHome from '@/components/header_unhome.vue'
-import SmallHeader from '@/components/smallHeader.vue'
+import Header from '@/components/header/header.vue'
+import SmallHeader from '@/components/header/smallHeader.vue'
 import Footer from '@/components/footer.vue'
 
 </script>
 
 <template>
-  <Header v-if="$route.meta.header"></Header>
-  <HeaderUnHome v-if="$route.meta.header_unhome"></HeaderUnHome>
+  <Header v-if="$route.meta.header" v-model:type='home'></Header>
   <SmallHeader v-if="$route.meta.small_header"></SmallHeader>
   <RouterView />
   <Footer></Footer>

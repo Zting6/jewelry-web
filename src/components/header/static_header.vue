@@ -12,7 +12,7 @@
                 <span>享顺丰快递</span>
                 <span>免运费</span>
             </div>
-            <div class="user">
+            <!-- <div class="user">
                 <el-icon>
                     <User />
                 </el-icon>
@@ -30,7 +30,7 @@
                     <span>注册</span>
                 </div>
 
-            </div>
+            </div> -->
         </div>
         <transition name="slide-fade">
             <div class="middle">
@@ -137,8 +137,9 @@
             <li class="b_4">礼品</li>
             <li class="b_5">优惠专区</li>
             <li class="b_6">团购专区</li>
-            <li class="b_7">搜索</li>
-            <li class="b_8">购物车</li>
+            <li class="b_7"><router-link to="/order">我的订单</router-link></li>
+            <li class="b_8"><router-link to="/cart">购物车</router-link></li>
+
         </ul>
 
     </div>
@@ -173,7 +174,7 @@ onUnmounted(() => {
     /* background-color: rgba(255, 255, 255, 0.3); */
     /* box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); */
     /* position: fixed; */
-    z-index: 100;
+    z-index: 20;
 
     color: black;
     background-color: rgb(240, 238, 228);
@@ -252,6 +253,7 @@ onUnmounted(() => {
     display: flex;
     position: relative;
     padding-bottom: 20px;
+    /* z-index: 999; */
 }
 
 .bottom>li {
@@ -285,6 +287,7 @@ onUnmounted(() => {
 
 .b_i_2 {
     padding-left: 460px;
+    z-index: 20;
 }
 
 .b_i_3 {
@@ -292,6 +295,11 @@ onUnmounted(() => {
 }
 
 .b_2:hover .b_i_2 {
+    display: flex;
+}
+
+.b_2:hover,
+.b_i_2:hover .b_i_2 {
     display: flex;
 }
 

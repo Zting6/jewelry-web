@@ -20,43 +20,51 @@
         </div>
         <div class="products">
             <h1>新品推荐</h1>
-            <div class="pros">
-                <div class="pro acShow">
-                    <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675835.jpg?context=bWFzdGVyfHJvb3R8MzI4MTB8aW1hZ2UvanBlZ3xoYjIvaDY0Lzk5Mjk3Nzk5MzczMTAuanBnfGExODM2YWM5OTRmOGNiZTdiODk5ZWE5YWNmMjdlYTA1NmQ0MGExNmE1NWVjMzYxMmJjNmYwZGIyY2RkMWQ5NmQ"
-                            alt="">
+            <div class="pros" style=" padding: 20px 160px;">
+                <router-link to="/detail">
+                    <div class="pro acShow">
+                        <div class="proImg" style=" width: 622px;
+            height: 420px;">
+                            <img src="../../../public/proimg/pro1.jpg" alt="">
+                        </div>
+                        <div class="proTitle">
+                            <span>清安系列珠宝</span>
+                        </div>
                     </div>
-                    <div class="proTitle">
-                        <span>pro</span>
+                </router-link>
+                <router-link to="/detail">
+                    <div class="pro acShow">
+                        <div class="proImg" style=" width: 622px;
+            height: 420px;">
+                            <img src="../../../public/proimg/pro2.jpg" alt="">
+                        </div>
+                        <div class="proTitle">
+                            <span>清安系列珠宝</span>
+                        </div>
                     </div>
-                </div>
-                <div class="pro acShow">
-                    <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675835.jpg?context=bWFzdGVyfHJvb3R8MzI4MTB8aW1hZ2UvanBlZ3xoYjIvaDY0Lzk5Mjk3Nzk5MzczMTAuanBnfGExODM2YWM5OTRmOGNiZTdiODk5ZWE5YWNmMjdlYTA1NmQ0MGExNmE1NWVjMzYxMmJjNmYwZGIyY2RkMWQ5NmQ"
-                            alt="">
+                </router-link>
+                <router-link to="/detail">
+                    <div class="pro acShow">
+                        <div class="proImg" style=" width: 622px;
+            height: 420px;">
+                            <img src="../../../public/proimg/pro3.jpg" alt="">
+                        </div>
+                        <div class="proTitle">
+                            <span>清安系列珠宝</span>
+                        </div>
                     </div>
-                    <div class="proTitle">
-                        <span>pro</span>
+                </router-link>
+                <router-link to="/detail">
+                    <div class="pro acShow">
+                        <div class="proImg" style=" width: 622px;
+            height: 420px;">
+                            <img src="../../../public/proimg/pro4.jpg" alt="">
+                        </div>
+                        <div class="proTitle">
+                            <span>清安系列珠宝</span>
+                        </div>
                     </div>
-                </div>
-                <div class="pro acShow">
-                    <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675835.jpg?context=bWFzdGVyfHJvb3R8MzI4MTB8aW1hZ2UvanBlZ3xoYjIvaDY0Lzk5Mjk3Nzk5MzczMTAuanBnfGExODM2YWM5OTRmOGNiZTdiODk5ZWE5YWNmMjdlYTA1NmQ0MGExNmE1NWVjMzYxMmJjNmYwZGIyY2RkMWQ5NmQ"
-                            alt="">
-                    </div>
-                    <div class="proTitle">
-                        <span>pro</span>
-                    </div>
-                </div>
-                <div class="pro acShow">
-                    <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675835.jpg?context=bWFzdGVyfHJvb3R8MzI4MTB8aW1hZ2UvanBlZ3xoYjIvaDY0Lzk5Mjk3Nzk5MzczMTAuanBnfGExODM2YWM5OTRmOGNiZTdiODk5ZWE5YWNmMjdlYTA1NmQ0MGExNmE1NWVjMzYxMmJjNmYwZGIyY2RkMWQ5NmQ"
-                            alt="">
-                    </div>
-                    <div class="proTitle">
-                        <span>pro</span>
-                    </div>
-                </div>
+                </router-link>
             </div>
         </div>
         <div class="cates">
@@ -64,12 +72,11 @@
             <div class="cts">
                 <div class="ct acShow">
                     <div class="ct_Img">
-                        <img src="https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_5342,h_5342,x_2671,y_3366/dpr_1.0,f_auto,q_auto,c_lfill,w_1024,h_1365/swa-cms/2023_ALWAYSON_VISUAL_LOOKBOOK-27_OF_GL_72DPI_RGB/.jpg"
-                            alt="">
+                        <img src="../../../public/outsidePro/neck.jpg" alt="">
                     </div>
                     <div class="ct_txt">
-                        <h1>项链</h1>
-                        <span>不同长度和配色让今年的产品更具创意 层层叠叠的项链打造时尚造型</span>
+                        <h1>光彩夺目的项链</h1>
+                        <span>长方形和锥状长方形混合切割仿水晶搭配施华洛世奇合成立方氧化锆，迸发美感，极具 savoir-faire，是纪念专属缘分的心动之选。</span>
                         <div class="buyButton">
                             立即选购
                         </div>
@@ -77,12 +84,11 @@
                 </div>
                 <div class="ct acShow">
                     <div class="ct_Img">
-                        <img src="https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_5342,h_5342,x_2671,y_3366/dpr_1.0,f_auto,q_auto,c_lfill,w_1024,h_1365/swa-cms/2023_ALWAYSON_VISUAL_LOOKBOOK-27_OF_GL_72DPI_RGB/.jpg"
-                            alt="">
+                        <img src="../../../public/outsidePro/bracelet.jpg" alt="">
                     </div>
                     <div class="ct_txt">
-                        <h1>项链</h1>
-                        <span>不同长度和配色让今年的产品更具创意 层层叠叠的项链打造时尚造型</span>
+                        <h1>尽显优雅的手链</h1>
+                        <span>色彩缤纷的饰石点缀施华洛世奇经典的 tennis 造型，是送给最重要女性的华丽礼物，包边镶嵌的仿水晶绽放优雅光芒，带来令人愉悦的奢华质感。</span>
                         <div class="buyButton">
                             立即选购
                         </div>
@@ -90,12 +96,11 @@
                 </div>
                 <div class="ct acShow">
                     <div class="ct_Img">
-                        <img src="https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_5342,h_5342,x_2671,y_3366/dpr_1.0,f_auto,q_auto,c_lfill,w_1024,h_1365/swa-cms/2023_ALWAYSON_VISUAL_LOOKBOOK-27_OF_GL_72DPI_RGB/.jpg"
-                            alt="">
+                        <img src="../../../public/outsidePro/earring.jpg" alt="">
                     </div>
                     <div class="ct_txt">
-                        <h1>项链</h1>
-                        <span>不同长度和配色让今年的产品更具创意 层层叠叠的项链打造时尚造型</span>
+                        <h1>活力四射的耳环</h1>
+                        <span>独特而大胆的全切割仿水晶大圈耳环彰显现代魅力，透明仿水晶环绕点缀，仿佛吟唱一曲隽永颂歌。</span>
                         <div class="buyButton">
                             立即选购
                         </div>
@@ -115,7 +120,8 @@
                                 alt="image" class="img-responsive zoom-img"></a>
 
                         <h4>Sed ut perspiciatis unde</h4>
-                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia</p>
+                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia
+                        </p>
                     </div>
                     <div class="col-md-3 wl">
                         <a href="#" class="mask"><img
@@ -123,7 +129,8 @@
                                 alt="image" class="img-responsive zoom-img"></a>
 
                         <h4>Sed ut perspiciatis unde</h4>
-                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia</p>
+                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia
+                        </p>
                     </div>
                     <div class="col-md-3 wl">
                         <a href="#" class="mask"><img
@@ -131,7 +138,8 @@
                                 alt="image" class="img-responsive zoom-img"></a>
 
                         <h4>Sed ut perspiciatis unde</h4>
-                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia</p>
+                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia
+                        </p>
                     </div>
                     <div class="col-md-3 wl">
                         <a href="#" class="mask"><img
@@ -139,7 +147,8 @@
                                 alt="image" class="img-responsive zoom-img"></a>
 
                         <h4>Sed ut perspiciatis unde</h4>
-                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia</p>
+                        <p>Adults trained the young in the knowledge and skills Lapeyrouse inFashion Elle Moscow, Russia
+                        </p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -151,38 +160,34 @@
             <ul class="necs pros">
                 <li class="nec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5677599.jpg?context=bWFzdGVyfHJvb3R8MTEzNDB8aW1hZ2UvanBlZ3xoZjcvaDNkLzk5Mjk3ODAxOTk0NTQuanBnfDU0NzI5MWNhNjNiOTE2NzNiZmUxNzM1ZjFkNmQ4MDVhMjViNTEyODVkZmYzZTY4ODJkMWIwMDFkYWFhZjg0YTA"
-                            alt="">
+                        <img src="../../../public/outsidePro/neck1.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列项链</span>
                     </div>
                 </li>
                 <li class="nec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5679916.jpg?context=bWFzdGVyfHJvb3R8MTEyNjV8aW1hZ2UvanBlZ3xoZDIvaDkyLzk5MzMyMDQ0NTU0NTQuanBnfDRlMjQ5YzJkZDY2Mzk4YmM1MGVjZGRjMzdlZDU4Y2Y2ZjI5MDM2MWFmYWEzZTM0YzgxOTBhYmRkMzFiZDlkOWQ"
-                            alt="">
+                        <img src="../../../public/outsidePro/neck2.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列项链</span>
                     </div>
                 </li>
                 <li class="nec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675835.jpg?context=bWFzdGVyfHJvb3R8MzI4MTB8aW1hZ2UvanBlZ3xoYjIvaDY0Lzk5Mjk3Nzk5MzczMTAuanBnfGExODM2YWM5OTRmOGNiZTdiODk5ZWE5YWNmMjdlYTA1NmQ0MGExNmE1NWVjMzYxMmJjNmYwZGIyY2RkMWQ5NmQ"
-                            alt="">
+                        <img src="../../../public/outsidePro/neck3.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列项链</span>
                     </div>
                 </li>
                 <li class="nec pro acShow">
                     <div class="proImg">
-                        <img src="https://asset.swarovski.com.cn/images/$size_1200/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_215/5521346_png/swarovski-infinity-y%E5%BD%A2%E9%A1%B9%E9%93%BE--infinity--%E7%99%BD%E8%89%B2--%E9%95%80%E7%8E%AB%E7%91%B0%E9%87%91%E8%89%B2%E8%B0%83-swarovski-5521346.png"
-                            alt="">
+                        <img src="../../../public/outsidePro/neck4.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列项链</span>
                     </div>
                 </li>
             </ul>
@@ -192,79 +197,71 @@
             <ul class="brcs pros">
                 <li class="brc pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675841.jpg?context=bWFzdGVyfHJvb3R8MTc1NTF8aW1hZ2UvanBlZ3xoZjAvaDc2Lzk5MzM2MzM1NTI0MTQuanBnfDc0ZjkwYjhhZmI2NjhlODhhODQ2ZDM1N2MwMGY4ZDA0MmMyZDEyMzU3MmY3NmY0ZmYwYmM5ZTRhZTFjMGNhY2Q"
-                            alt="">
+                        <img src="../../../public/outsidePro/bracelet1.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列手链</span>
                     </div>
                 </li>
                 <li class="brc pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5682585.jpg?context=bWFzdGVyfHJvb3R8MTMzOTN8aW1hZ2UvanBlZ3xoNjQvaDBlLzk5MzU0OTk5NTIxNTguanBnfGIwYWFjYTBkMzVmZWZiMzMyOTEyOGU4MmJkOTUyNzhmMzBiYjg2NzVmNzMzYTYzMTEyYTBiMmIwZjgxZGM0ZTU"
-                            alt="">
+                        <img src="../../../public/outsidePro/bracelet2.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列手链</span>
                     </div>
                 </li>
                 <li class="brc pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5675998.jpg?context=bWFzdGVyfHJvb3R8MTQ1ODh8aW1hZ2UvanBlZ3xoMjMvaGQ2Lzk5MzM2MzM3NDkwMjIuanBnfGY0YWUxZDM0YzE5ZjVlYTk3ZWJkMDg1YjM5YTVlMTZiNTA5ZDFkODFjNzA3ZGUxNTkwMTJmODA1YTQwYjhhOWE"
-                            alt="">
+                        <img src="../../../public/outsidePro/bracelet3.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列手链</span>
                     </div>
                 </li>
                 <li class="brc pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5683452.jpg?context=bWFzdGVyfHJvb3R8MTQ0NTF8aW1hZ2UvanBlZ3xoMDEvaDU5Lzk5MzMyMDQxNjA1NDIuanBnfGE1ZjNiYTE3YjlkMWZlNzZiYjBjM2JlYWNiOTczYmE2NWM1YTM0ZjAyYzNiZmVkYTY2Y2EzMDlhZGE4ODNkYjk"
-                            alt="">
+                        <img src="../../../public/outsidePro/bracelet4.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列手链</span>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="ring">
-            <h3>更多戒指</h3>
+        <div class="earring">
+            <h3>更多耳环</h3>
             <ul class="ris pros">
                 <li class="ri pro acShow">
                     <div class="proImg">
-                        <img src="https://asset.swarovski.com.cn/images/$size_1200/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_360/5679698_png/hyperbola-%E4%B8%AA%E6%80%A7%E6%88%92%E6%8C%87--infinity--%E7%99%BD%E8%89%B2--%E9%95%80%E9%93%91-swarovski-5679698.png"
-                            alt="">
+                        <img src="../../../public/outsidePro/earring1.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列耳环</span>
                     </div>
                 </li>
                 <li class="ri pro acShow">
                     <div class="proImg">
-                        <img src="https://asset.swarovski.com.cn/images/$size_1200/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_360/5677139_png/luna-%E5%BC%80%E5%8F%A3%E6%88%92%E6%8C%87--%E6%9C%88%E4%BA%AE--%E7%99%BD%E8%89%B2--%E9%95%80%E9%93%91-swarovski-5677139.png"
-                            alt="">
+                        <img src="../../../public/outsidePro/earring2.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列耳环</span>
                     </div>
                 </li>
                 <li class="ri pro acShow">
                     <div class="proImg">
-                        <img src="https://asset.swarovski.com.cn/images/$size_1200/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_360/5647560_png/volta-%E4%B8%AA%E6%80%A7%E6%88%92%E6%8C%87--%E8%9D%B4%E8%9D%B6%E7%BB%93--%E7%99%BD%E8%89%B2--%E9%95%80%E9%93%91-swarovski-5647560.png"
-                            alt="">
+                        <img src="../../../public/outsidePro/earring3.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列耳环</span>
                     </div>
                 </li>
                 <li class="ri pro acShow">
                     <div class="proImg">
-                        <img src="https://asset.swarovski.com.cn/images/$size_1200/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_360/5648292_png/matrix-%E4%B8%AA%E6%80%A7%E6%88%92%E6%8C%87--%E6%B7%B7%E5%90%88%E5%88%87%E5%89%B2--%E5%BF%83%E5%BD%A2--%E7%99%BD%E8%89%B2--%E9%95%80%E9%93%91-swarovski-5648292.png"
-                            alt="">
+                        <img src="../../../public/outsidePro/earring4.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列耳环</span>
                     </div>
                 </li>
             </ul>
@@ -275,38 +272,34 @@
             <ul class="decs pros">
                 <li class="dec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5557537.jpg?context=bWFzdGVyfHJvb3R8MTUxMTN8aW1hZ2UvanBlZ3xoOTMvaGI5Lzk5MzQyMTY3NTcyNzguanBnfGZkM2FiZTcyZDQ4NDRhYTU3NTMyYWEzZTFhNzNjYTM0ODVkZjI2YjAxNzNjZDFlZWUzOTExMjk5NjM4M2EyZTU"
-                            alt="">
+                        <img src="../../../public/outsidePro/desc1.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列摆件</span>
                     </div>
                 </li>
                 <li class="dec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5667298.jpg?context=bWFzdGVyfHJvb3R8MTk5NDd8aW1hZ2UvanBlZ3xoNmQvaDI3Lzk5Mjk3ODEwNTE0MjIuanBnfDZkYzk2YTMyOWY0YTNkMmMyNzViZWU2YWQ3MjYxZTk4M2YxN2EzYjk3ZTZmMDlmNWVhZDAwNjcxODg2OGYxZTA"
-                            alt="">
+                        <img src="../../../public/outsidePro/desc2.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列摆件</span>
                     </div>
                 </li>
                 <li class="dec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5557797-var1.jpg?context=bWFzdGVyfHJvb3R8MjI3ODd8aW1hZ2UvanBlZ3xoOGMvaGFlLzk5MjI4NTg0ODM3NDIuanBnfGFiZjQyNmIzZjk3YTdkOTY3ZjUwMGY5NWU5ZDMxOTkyZmY4ZjAyMWNjMTU0ODdjMTZiYTMzOGM3YmM2ZjI2MWU"
-                            alt="">
+                        <img src="../../../public/outsidePro/desc3.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列摆件</span>
                     </div>
                 </li>
                 <li class="dec pro acShow">
                     <div class="proImg">
-                        <img src="https://www.swarovski.com.cn/medias/5658442.jpg?context=bWFzdGVyfHJvb3R8MjczNTF8aW1hZ2UvanBlZ3xoYTcvaDhmLzk5MjI4NTg1NDkyNzguanBnfDIyNjUxMzlmNWNkNGMzZDM2Y2JhMDM2NjZiMzU2YzMxMGI0OTI3MmEzMTQxNTUzNjA2MzI4MTVlOTQ2Y2QzYmQ"
-                            alt="">
+                        <img src="../../../public/outsidePro/desc4.jpg" alt="">
                     </div>
                     <div class="proTitle">
-                        <span>pro</span>
+                        <span>清安系列摆件</span>
                     </div>
                 </li>
             </ul>
@@ -349,6 +342,9 @@
 <script setup lang="ts">
 import { ref, reactive, onUnmounted, onMounted } from "vue"
 import "./js/smoothscroll.js";
+import { cateList } from '@/api/home/index'
+
+
 const isHome = ref(true)
 const actImgs = ref([
     "https://asset.swarovski.com.cn/images/c_crop,g_xy_center,w_3794,h_2135,x_3291,y_2288/dpr_1.0,f_auto,q_auto,c_lfill,w_1920,h_880/swa-cms/2023_HOLIDAY_KV_MESMERA_OF_GL_72DPI_RGB_EXT2/.jpg",
@@ -378,9 +374,18 @@ const handleScroll = () => {
     })
 }
 
+const getCateList = async () => {
+    await cateList().then(res => {
+        console.log('catelist: ', res);
+    })
+}
+
+
 onMounted(() => {
     // 获取所有带有 acShow 类名的元素
     handleScroll()
+    getCateList();
+
 
     // 添加滚动监听
     window.addEventListener('scroll', handleScroll)
@@ -466,7 +471,8 @@ onMounted(() => {
     margin: 42px 0;
     width: 100vw;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+
 
     /* 渐显效果 */
     .pro:nth-child(1) {
@@ -491,18 +497,19 @@ onMounted(() => {
 
     .pro {
 
-        margin-bottom: 6px;
-
+        margin-bottom: 26px;
 
         .proImg {
+
             width: 722px;
             height: 358px;
             overflow: hidden;
 
             img {
-                width: 722px;
-                height: 358px;
+                width: 100%;
+                height: 106%;
                 transition: all .3s;
+
             }
 
             img:hover {
@@ -512,7 +519,7 @@ onMounted(() => {
         }
 
         .proTitle {
-            width: 722px;
+            width: 100%;
             height: 50px;
             background-color: rgb(248, 247, 242);
             display: flex;
@@ -580,7 +587,10 @@ onMounted(() => {
                     margin-bottom: 20px;
                 }
 
-                span {}
+                span {
+                    display: inline-block;
+                    width: 420px;
+                }
 
 
                 .buyButton {
@@ -882,8 +892,8 @@ img.zoom-img:hover {
     }
 }
 
-/* ring starts */
-.ring {
+/* earring starts */
+.earring {
     display: flex;
     flex-direction: column;
     justify-content: center;

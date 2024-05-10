@@ -117,8 +117,8 @@ export default {
 <style scoped>
 .spec-preview {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border: 1px solid #ccc;
 
     img {
@@ -132,7 +132,7 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 998;
+        z-index: 10;
     }
 
     .mask {
@@ -153,7 +153,7 @@ export default {
         left: 100%;
         border: 1px solid #aaa;
         overflow: hidden;
-        z-index: 998;
+        /* z-index: 998; */
         display: none;
         background: white;
 

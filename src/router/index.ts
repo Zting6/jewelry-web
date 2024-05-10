@@ -29,6 +29,11 @@ const router = createRouter({
       meta: { small_header: true }
     },
     {
+      path: '/info',
+      name: 'info',
+      component: () => import('../views/info/index.vue'),
+    },
+    {
       path: '/prolist',
       name: 'prolist',
       component: () => import('../views/prolist/index.vue'),
@@ -39,7 +44,57 @@ const router = createRouter({
       name: 'detail',
       component: () => import('../views/detail/index.vue'),
 
-    }
+    },
+    {
+      path: '/detail/:proid',
+      name: 'detailWithParam',
+      component: () => import('../views/detail/index.vue'),
+
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: () => import('../views/cart/index.vue'),
+
+    },
+    {
+      path: '/addCart',
+      name: 'addCart',
+      component: () => import('../views/cart/addCart/index.vue'),
+
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: () => import('../views/order/index.vue'),
+    },
+    {
+      path: '/trade',
+      name: 'trade',
+      component: () => import('../views/trade/index.vue'),
+    },
+    {
+      path: '/tradeDetail',
+      name: 'tradeDetail',
+      component: () => import('../views/trade/tradeDetail/index.vue'),
+    },
+    {
+      path: '/tradeDetail/:proid',
+      name: 'tradeDetailWithParam',
+      component: () => import('../views/trade/tradeDetail/index.vue'),
+
+    },
+    {
+      path: '/pay',
+      name: 'pay',
+      component: () => import('../views/pay/index.vue'),
+    },
+    {
+      path: '/paysuccess',
+      name: 'paysuccess',
+      component: () => import('../views/pay/paySuccess/index.vue'),
+    },
+
   ]
 })
 

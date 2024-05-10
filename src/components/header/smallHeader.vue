@@ -38,6 +38,7 @@
 
             </div>
         </transition>
+        <a href="/login">nb</a>
 
         <ul class="bottom">
             <li class="b_1">新品上市</li>
@@ -144,7 +145,9 @@
     </div>
     <div class="outersmall" :class="{ outersmall: isAtTop, outersmall_untop: !isAtTop }">
         <div class="os_inner">
-            <div class="os_title">SECLUDED RESIGNED</div>
+            <router-link to="/">
+                <div class="os_title">SECLUDED RESIGNED</div>
+            </router-link>
             <div class="os_content">
                 <ul class="bottom">
                     <li class="b_1">新品上市</li>
@@ -244,8 +247,8 @@
                     <li class="b_4">礼品</li>
                     <li class="b_5">优惠专区</li>
                     <li class="b_6">团购专区</li>
-                    <li class="b_7">搜索</li>
-                    <li class="b_8">购物车</li>
+                    <li class="b_7"><router-link to="/order">我的订单</router-link></li>
+                    <li class="b_8"><router-link to="/cart">购物车</router-link></li>
                 </ul>
             </div>
 
@@ -255,19 +258,15 @@
 </template>
 <script setup lang="ts">
 import { ref, reactive, onMounted, onUnmounted } from "vue"
-const isAtTop = ref(true);
+const isAtTop = ref(false);
 
-const handleScroll = () => {
-    isAtTop.value = window.scrollY === 0;
-};
+
 
 onMounted(() => {
-    window.addEventListener("scroll", handleScroll);
+
 });
 
-onUnmounted(() => {
-    window.removeEventListener("scroll", handleScroll);
-});
+
 
 
 
@@ -278,11 +277,10 @@ onUnmounted(() => {
     display: flex;
     flex-direction: column;
     transition: all .5s ease-in-out;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
-    position: fixed;
+
     z-index: 100;
+    color: black;
+    background-color: rgb(240, 238, 228);
 
     /* box-shadow: 0 0 20px 20px transparent; */
 
@@ -364,11 +362,7 @@ onUnmounted(() => {
     }
 }
 
-.outer:hover {
-    color: black;
-    background-color: rgb(240, 238, 228);
-    cursor: pointer;
-}
+
 
 .top {
     width: 100%;
