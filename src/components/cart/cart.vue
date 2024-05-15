@@ -63,15 +63,15 @@ allProducts.value = [{
 
         <h2 style="margin-bottom: 20px;">{{ titleB }}</h2>
         <el-table style="width: 100%; text-align: center" table-layout="auto" :data="allProducts">
-            <el-table-column prop="goodsPic" align="center" label="GoodsPic" width="200">
+            <el-table-column prop="goodsPic" align="center" label="商品图片" width="300">
                 <template v-slot="{ row }">
                     <img :src="row.goodsPic" style="width: 100px; height: 100px;" alt="">
                 </template>
             </el-table-column>
-            <el-table-column prop="goodsName" align="center" label="GoodsName" width="auto" />
-            <el-table-column prop="price" align="center" label="Price" width="150" />
-            <el-table-column prop="shopCount" align="center" label="Quantity" width="150" />
-            <el-table-column fixed="right" align="center" label="Action" width="120">
+            <el-table-column prop="goodsName" align="center" label="商品名称" width="auto" />
+            <el-table-column prop="price" align="center" label="单价" width="250" />
+            <el-table-column prop="shopCount" align="center" label="数量" width="250" />
+            <el-table-column fixed="right" align="center" label="操作" width="220">
                 <template #default="scope">
                     <el-button type="info" text bg
                         @click.prevent="carsStore.addProduct(scope.row); scope.row.shopCount++">

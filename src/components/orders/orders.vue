@@ -22,6 +22,7 @@ interface ALLPRO {
     goodsPic: string,
     goodsName: string,
     price: number,
+    shopCount: number,
     inventory: number
 }
 const allProducts = ref<ALLPRO[]>([])
@@ -30,24 +31,28 @@ allProducts.value = [{
     goodsPic: "https://asset.swarovski.com.cn/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_675/5678045_png/%E3%80%90%E6%AD%A4%E6%B2%99%E5%90%8C%E6%AC%BE%E3%80%91swarovski-swan-%E9%93%BE%E5%9D%A0--%E5%A4%A9%E9%B9%85--%E9%BB%91%E8%89%B2--%E9%95%80%E7%8E%AB%E7%91%B0%E9%87%91%E8%89%B2%E8%B0%83-swarovski-5678045.png",
     goodsName: "Airpods",
     price: 998,
+    shopCount: 1,
     inventory: 3
 }, {
     id: 2,
     goodsPic: "https://asset.swarovski.com.cn/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_675/5678045_png/%E3%80%90%E6%AD%A4%E6%B2%99%E5%90%8C%E6%AC%BE%E3%80%91swarovski-swan-%E9%93%BE%E5%9D%A0--%E5%A4%A9%E9%B9%85--%E9%BB%91%E8%89%B2--%E9%95%80%E7%8E%AB%E7%91%B0%E9%87%91%E8%89%B2%E8%B0%83-swarovski-5678045.png",
     goodsName: "MacBook2022",
     price: 12998,
+    shopCount: 1,
     inventory: 5
 }, {
     id: 3,
     goodsPic: "https://asset.swarovski.com.cn/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_675/5678045_png/%E3%80%90%E6%AD%A4%E6%B2%99%E5%90%8C%E6%AC%BE%E3%80%91swarovski-swan-%E9%93%BE%E5%9D%A0--%E5%A4%A9%E9%B9%85--%E9%BB%91%E8%89%B2--%E9%95%80%E7%8E%AB%E7%91%B0%E9%87%91%E8%89%B2%E8%B0%83-swarovski-5678045.png",
     goodsName: "iwatch 8",
     price: 3498,
+    shopCount: 1,
     inventory: 2
 }, {
     id: 4,
     goodsPic: "https://asset.swarovski.com.cn/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_675/5678045_png/%E3%80%90%E6%AD%A4%E6%B2%99%E5%90%8C%E6%AC%BE%E3%80%91swarovski-swan-%E9%93%BE%E5%9D%A0--%E5%A4%A9%E9%B9%85--%E9%BB%91%E8%89%B2--%E9%95%80%E7%8E%AB%E7%91%B0%E9%87%91%E8%89%B2%E8%B0%83-swarovski-5678045.png",
     goodsName: "ipad 2022",
     price: 4688,
+    shopCount: 1,
     inventory: 6
 }]
 
@@ -58,22 +63,23 @@ allProducts.value = [{
 
         <h2 style="margin-bottom: 20px;">{{ title }}</h2>
         <el-table style="width: 100%; text-align: center" table-layout="auto" :data="allProducts">
-            <el-table-column prop="goodsPic" align="center" label="GoodsPic" width="200">
+            <el-table-column prop="id" align="center" label="订单编号" width="auto" />
+            <el-table-column prop="goodsPic" align="center" label="商品图片" width="200">
                 <template v-slot="{ row }">
                     <img :src="row.goodsPic" style="width: 100px; height: 100px;" alt="">
                 </template>
             </el-table-column>
-            <el-table-column prop="goodsName" align="center" label="GoodsName" width="auto" />
-            <el-table-column prop="price" align="center" label="Price" width="150" />
-            <el-table-column prop="shopCount" align="center" label="Quantity" width="150" />
-            <el-table-column fixed="right" align="center" label="Status" width="160">
+            <el-table-column prop="goodsName" align="center" label="商品名称" width="auto" />
+            <el-table-column prop="price" align="center" label="总价" width="150" />
+            <el-table-column prop="shopCount" align="center" label="数量" width="150" />
+            <el-table-column fixed="right" align="center" label="支付状态" width="160">
                 <template #default="scope">
                     <el-button type="success" text bg @click.prevent="carsStore.addProduct(scope.row)">
                         已支付
                     </el-button>
                 </template>
             </el-table-column>
-            <el-table-column fixed="right" align="center" label="Details" width="220">
+            <el-table-column fixed="right" align="center" label="订单详情" width="220">
                 <template #default="scope">
                     <el-button type="info" text bg @click.prevent="carsStore.addProduct(scope.row)">
                         <router-link to="/tradeDetail" style="cursor: pointer;">查看订单详情</router-link>
@@ -81,7 +87,7 @@ allProducts.value = [{
 
                 </template>
             </el-table-column>
-            <el-table-column fixed="right" align="center" label="Action" width="160">
+            <el-table-column fixed="right" align="center" label="操作" width="160">
                 <template #default="scope">
                     <el-button type="info" text bg @click.prevent="carsStore.addProduct(scope.row)">
                         <router-link to="/pay" style="cursor: pointer;">去支付</router-link>
