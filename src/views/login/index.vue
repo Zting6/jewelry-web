@@ -40,7 +40,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import type { FormInstance, FormRules } from "element-plus";
+import { type FormInstance, type FormRules } from "element-plus";
 import { ref, reactive } from "vue"
 import { useUserStore } from '@/store/user'
 import { code, loginByUser, loginByPhone } from '@/api/user/user'
@@ -89,30 +89,37 @@ const getCode = async () => {
     if (logForm.phone) {
         if (disableCodeButton.value) return; // 如果按钮已禁用，则不执行后续逻辑
 
-        // 弹出提示框
-        ElMessage({
-            message: '验证码发送成功',
-            type: 'success',
-        })
-        // 禁用按钮
-        disableCodeButton.value = true;
-        codeButtonText.value = '重新发送(30s)';
-
-        // 倒计时 30 秒
-        let seconds = 30;
-        const timer = setInterval(() => {
-            seconds--;
-            codeButtonText.value = `重新发送(${seconds}s)`;
-            if (seconds === 0) {
-                clearInterval(timer);
-                codeButtonText.value = '获取验证码';
-                disableCodeButton.value = false; // 启用按钮
-            }
-        }, 1000);
-
         // 调用获取验证码的接口
         await code(logForm.phone).then(res => {
             // 处理接口返回的数据
+            if (res.data.code === 0) {
+                ElMessage({
+                    message: res.data.msg,
+                    type: 'error'
+                })
+            } else {
+                // 弹出提示框
+                ElMessage({
+                    message: '验证码发送成功',
+                    type: 'success',
+                })
+                // 禁用按钮
+                disableCodeButton.value = true;
+                codeButtonText.value = '重新发送(30s)';
+
+                // 倒计时 30 秒
+                let seconds = 30;
+                const timer = setInterval(() => {
+                    seconds--;
+                    codeButtonText.value = `重新发送(${seconds}s)`;
+                    if (seconds === 0) {
+                        clearInterval(timer);
+                        codeButtonText.value = '获取验证码';
+                        disableCodeButton.value = false; // 启用按钮
+                    }
+                }, 1000);
+            }
+
         });
     } else {
         ElMessage({
@@ -139,10 +146,10 @@ const submitForm = async () => {
 
         if (valid) {
             if (userLog.value == true) {
-                console.log(logForm);
+
 
                 const res = userStore.userLogin(logForm).then(res => {
-
+                    console.log(res);
                     if (res.code === 1 || res.code === 200) {
                         setTimeout(() => {
                             router.push('/')

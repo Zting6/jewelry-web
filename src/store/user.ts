@@ -38,7 +38,7 @@ export const useUserStore = defineStore('user', {
 
       } else {
         ElMessage({
-          message: '登录失败',
+          message: res.msg,
           type: 'error'
         })
       }
@@ -49,7 +49,7 @@ export const useUserStore = defineStore('user', {
     },
     async phoneLogin(reqForm) {
       this.userInfo = reqForm;
-      const res = await loginByUser(reqForm);
+      const res = await loginByPhone(reqForm);
 
       if (res.code === 1 || res.code === 200) {
         ElMessage({
@@ -64,7 +64,7 @@ export const useUserStore = defineStore('user', {
 
       } else {
         ElMessage({
-          message: '登录失败',
+          message: res.msg,
           type: 'error'
         })
       }
